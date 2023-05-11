@@ -37,7 +37,7 @@ class PaymentController extends Controller
         // Gera novo boleto
         $payload = [
             'customer'    => Auth::user()->asaas_id,
-            'billingType' => 'PIX',
+            'billingType' => 'BOLETO',
             'value'       => $charge->value,
             'dueDate'     => $charge->dueDate
         ];
