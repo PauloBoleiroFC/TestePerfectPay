@@ -18,6 +18,10 @@
                         <div class="alert alert-success" role="alert">
                             <p> abaixo o QRCode para realizar o pagamento.</p><br />
                             <img src="data:image/gif;base64,{{$pixQrCode->encodedImage}}" /><br /><br />
+
+                            Pix copia e cola:<br />
+                            {{$pixQrCode->payload}}<br /><br />
+
                             <p>Obrigado.</p>
                         </div>
                     @else
